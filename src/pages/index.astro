@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout title="Guia Scrum - Aprenda de forma simples e objetiva">
+  <Header />
+  
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold mb-6">Aprenda Scrum</h1>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Um guia completo sobre a metodologia ágil mais utilizada no mundo
+        </p>
+        <a href="#what-is-scrum" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+          Começar
+        </a>
+      </div>
+    </div>
+
+    <!-- O que é Scrum -->
+    <Section
+      id="what-is-scrum"
+      title="O que é Scrum?"
+      description="O Scrum é um framework ágil para gestão e planejamento de projetos."
+    >
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Definição</h3>
+          <p class="text-gray-600">
+            O Scrum é um framework leve que ajuda pessoas, times e organizações a gerar valor por meio de soluções adaptativas para problemas complexos.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Benefícios</h3>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li>Maior transparência e visibilidade do projeto</li>
+            <li>Adaptação rápida às mudanças</li>
+            <li>Entrega contínua de valor</li>
+            <li>Maior engajamento da equipe</li>
+          </ul>
+        </div>
+      </div>
+    </Section>
+
+    <!-- Pilares -->
+    <Section
+      id="pillars"
+      title="Os 3 Pilares do Scrum"
+      description="O Scrum é fundamentado em três pilares essenciais que sustentam todo o framework."
+    >
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600">Transparência</h3>
+          <p class="text-gray-600">
+            Aspectos significativos do processo devem estar visíveis aos responsáveis pelo resultado.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600">Inspeção</h3>
+          <p class="text-gray-600">
+            Os artefatos Scrum e o progresso em direção aos objetivos devem ser inspecionados frequentemente.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4 text-blue-600">Adaptação</h3>
+          <p class="text-gray-600">
+            Se algum aspecto do processo estiver fora dos limites aceitáveis, ajustes devem ser feitos o mais rápido possível.
+          </p>
+        </div>
+      </div>
+    </Section>
+
+    <!-- Eventos -->
+    <Section
+      id="events"
+      title="Eventos do Scrum"
+      description="Os eventos são momentos específicos para criar regularidade e minimizar reuniões não definidas no Scrum."
+    >
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Sprint</h3>
+          <p class="text-gray-600">Período de tempo fixo de um mês ou menos durante o qual um produto "Pronto" utilizável e potencialmente incrementável é criado.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Sprint Planning</h3>
+          <p class="text-gray-600">Reunião que inicia a Sprint e define o que pode ser entregue e como o trabalho será realizado.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Daily Scrum</h3>
+          <p class="text-gray-600">Evento diário de 15 minutos para o Time de Desenvolvimento sincronizar atividades e criar um plano para as próximas 24 horas.</p>
+        </div>
+      </div>
+    </Section>
+
+    <!-- Papéis -->
+    <Section
+      id="roles"
+      title="Papéis no Scrum"
+      description="O Time Scrum é formado por três papéis fundamentais."
+    >
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Product Owner</h3>
+          <p class="text-gray-600">Responsável por maximizar o valor do produto e gerenciar o Product Backlog.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Scrum Master</h3>
+          <p class="text-gray-600">Responsável por promover e suportar o Scrum, ajudando todos a entenderem a teoria e a prática.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Developers</h3>
+          <p class="text-gray-600">Profissionais que realizam o trabalho de entregar um incremento utilizável do produto ao final de cada Sprint.</p>
+        </div>
+      </div>
+    </Section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2024 ScrumGuide. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</Layout>
